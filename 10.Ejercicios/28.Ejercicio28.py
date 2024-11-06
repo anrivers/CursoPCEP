@@ -4,7 +4,7 @@ Crea una función llamada es_primo que reciba un número entero como parámetro 
 def es_primo(numero):
     if numero < 2:
         return False
-    for i in range(2, int(numero ** 0.5) + 1):
+    for i in range(2, numero):
         if numero % i == 0:
             return False
     return True
